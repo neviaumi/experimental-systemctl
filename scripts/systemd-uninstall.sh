@@ -6,7 +6,7 @@ set -ex
 
 echo "--- Starting systemctl service uninstall ---"
 
-APP_NAME="demo-systemctl.service"
+APP_NAME="demo-systemd.service"
 APP_FILE="/etc/systemd/system/${APP_NAME}"
 
 # 1. Stop the service if it's running
@@ -41,5 +41,5 @@ echo "4. Reloading systemd manager configuration..."
 sudo systemctl daemon-reload
 echo "   Systemd configuration reloaded."
 
-echo "--- Systemctl service uninstall completed successfully! ---"
+echo "--- Systemd service uninstall completed successfully! ---"
 echo "The '${APP_NAME}' service has been removed and disabled."

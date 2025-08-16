@@ -4,10 +4,10 @@
 # Print commands and their arguments as they are executed.
 set -e
 
-APP_NAME="demo-systemctl"
-APP_DESCRIPTION="My Hello Systemctl Service"
+APP_NAME="demo-systemd"
+APP_DESCRIPTION="My Hello systemd Service"
 
-echo "--- Starting systemctl service installation ---"
+echo "--- Starting systemd service installation ---"
 
 # Get the absolute path of the directory where this script is located
 SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
@@ -53,5 +53,5 @@ echo "INFO: Service '$APP_NAME.service' enabled."
 
 sudo systemctl start "$APP_NAME.service"
 
-echo "--- Systemctl service installation completed successfully! ---"
+echo "--- Systemd service installation completed successfully! ---"
 echo "You can now check its status using: sudo systemctl status $APP_NAME.service"

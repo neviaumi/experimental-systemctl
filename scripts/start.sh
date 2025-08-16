@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
 while true; do
-  echo "hello systemctl"
+  echo "hello systemd"
   sleep 2
 done
